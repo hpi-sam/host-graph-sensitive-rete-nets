@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mlstorypatterns="http://www.mdelab.de/mlstorypatterns/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_CbGWcXH9EeuOz4VpLlwd3g" type="Mlstorypatterns" name="SwitchMonitored.mlsp_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_Eb2GMHH9EeuOz4VpLlwd3g" type="2003" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Eb2GMnH9EeuOz4VpLlwd3g" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Eb2GM3H9EeuOz4VpLlwd3g" type="5002"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Eb2GNHH9EeuOz4VpLlwd3g" type="5003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Eb2GNXH9EeuOz4VpLlwd3g" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Eb2GNnH9EeuOz4VpLlwd3g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Eb2GN3H9EeuOz4VpLlwd3g"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Eb2GOHH9EeuOz4VpLlwd3g" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Eb2GOXH9EeuOz4VpLlwd3g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Eb2GOnH9EeuOz4VpLlwd3g"/>
+    </children>
+    <element xmi:type="mlstorypatterns:StoryPatternObject" href="SwitchMonitored.mlsp#_Eb0RAHH9EeuOz4VpLlwd3g"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Eb2GMXH9EeuOz4VpLlwd3g" x="204" y="240"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_CbGWcnH9EeuOz4VpLlwd3g"/>
+  <element xmi:type="mlstorypatterns:StoryPattern" href="SwitchMonitored.mlsp#_CbGWcHH9EeuOz4VpLlwd3g"/>
+</notation:Diagram>

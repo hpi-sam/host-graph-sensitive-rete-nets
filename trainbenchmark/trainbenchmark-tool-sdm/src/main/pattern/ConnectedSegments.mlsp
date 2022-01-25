@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mlstorypatterns:StoryPattern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mlstorypatterns="http://www.mdelab.de/mlstorypatterns/1.0" uuid="_9-0DQHH6EeucNOQNNewz3g">
+  <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_5ESNgHH7EeuOz4VpLlwd3g" source="_lCi9gHH7EeuOz4VpLlwd3g" target="_sxwE4HH7EeuOz4VpLlwd3g">
+    <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//TrackElement/connectsTo"/>
+  </storyPatternLinks>
+  <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_5zSBgHH7EeuOz4VpLlwd3g" source="_sxwE4HH7EeuOz4VpLlwd3g" target="_sceYcHH7EeuOz4VpLlwd3g">
+    <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//TrackElement/connectsTo"/>
+  </storyPatternLinks>
+  <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_6RuRAHH7EeuOz4VpLlwd3g" source="_sceYcHH7EeuOz4VpLlwd3g" target="_snhx4HH7EeuOz4VpLlwd3g">
+    <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//TrackElement/connectsTo"/>
+  </storyPatternLinks>
+  <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_6_MbAHH7EeuOz4VpLlwd3g" source="_snhx4HH7EeuOz4VpLlwd3g" target="_tGgz8HH7EeuOz4VpLlwd3g">
+    <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//TrackElement/connectsTo"/>
+  </storyPatternLinks>
+  <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_70lx8HH7EeuOz4VpLlwd3g" source="_tGgz8HH7EeuOz4VpLlwd3g" target="_tZpyYHH7EeuOz4VpLlwd3g">
+    <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//TrackElement/connectsTo"/>
+  </storyPatternLinks>
+  <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_9AIYAHH7EeuOz4VpLlwd3g" source="_ti0VcHH7EeuOz4VpLlwd3g" target="_lCi9gHH7EeuOz4VpLlwd3g">
+    <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Sensor/monitors"/>
+  </storyPatternLinks>
+  <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_9v5BAHH7EeuOz4VpLlwd3g" source="_ti0VcHH7EeuOz4VpLlwd3g" target="_sxwE4HH7EeuOz4VpLlwd3g">
+    <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Sensor/monitors"/>
+  </storyPatternLinks>
+  <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_-Zn6gHH7EeuOz4VpLlwd3g" source="_ti0VcHH7EeuOz4VpLlwd3g" target="_sceYcHH7EeuOz4VpLlwd3g">
+    <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Sensor/monitors"/>
+  </storyPatternLinks>
+  <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_-9VEgHH7EeuOz4VpLlwd3g" source="_ti0VcHH7EeuOz4VpLlwd3g" target="_snhx4HH7EeuOz4VpLlwd3g">
+    <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Sensor/monitors"/>
+  </storyPatternLinks>
+  <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="__zzZgHH7EeuOz4VpLlwd3g" source="_ti0VcHH7EeuOz4VpLlwd3g" target="_tGgz8HH7EeuOz4VpLlwd3g">
+    <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Sensor/monitors"/>
+  </storyPatternLinks>
+  <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_AqH9gHH8EeuOz4VpLlwd3g" source="_ti0VcHH7EeuOz4VpLlwd3g" target="_tZpyYHH7EeuOz4VpLlwd3g">
+    <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Sensor/monitors"/>
+  </storyPatternLinks>
+  <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_ti0VcHH7EeuOz4VpLlwd3g" name="sensor" outgoingLinks="_9AIYAHH7EeuOz4VpLlwd3g _9v5BAHH7EeuOz4VpLlwd3g _-Zn6gHH7EeuOz4VpLlwd3g _-9VEgHH7EeuOz4VpLlwd3g __zzZgHH7EeuOz4VpLlwd3g _AqH9gHH8EeuOz4VpLlwd3g" bindingType="CAN_BE_BOUND">
+    <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Sensor"/>
+  </storyPatternObjects>
+  <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_lCi9gHH7EeuOz4VpLlwd3g" name="segment1" outgoingLinks="_5ESNgHH7EeuOz4VpLlwd3g" incomingLinks="_9AIYAHH7EeuOz4VpLlwd3g" bindingType="CAN_BE_BOUND">
+    <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Segment"/>
+  </storyPatternObjects>
+  <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_sxwE4HH7EeuOz4VpLlwd3g" name="segment2" outgoingLinks="_5zSBgHH7EeuOz4VpLlwd3g" incomingLinks="_5ESNgHH7EeuOz4VpLlwd3g _9v5BAHH7EeuOz4VpLlwd3g" bindingType="CAN_BE_BOUND">
+    <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Segment"/>
+  </storyPatternObjects>
+  <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_sceYcHH7EeuOz4VpLlwd3g" name="segment3" outgoingLinks="_6RuRAHH7EeuOz4VpLlwd3g" incomingLinks="_5zSBgHH7EeuOz4VpLlwd3g _-Zn6gHH7EeuOz4VpLlwd3g" bindingType="CAN_BE_BOUND">
+    <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Segment"/>
+  </storyPatternObjects>
+  <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_snhx4HH7EeuOz4VpLlwd3g" name="segment4" outgoingLinks="_6_MbAHH7EeuOz4VpLlwd3g" incomingLinks="_6RuRAHH7EeuOz4VpLlwd3g _-9VEgHH7EeuOz4VpLlwd3g" bindingType="CAN_BE_BOUND">
+    <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Segment"/>
+  </storyPatternObjects>
+  <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_tGgz8HH7EeuOz4VpLlwd3g" name="segment5" outgoingLinks="_70lx8HH7EeuOz4VpLlwd3g" incomingLinks="_6_MbAHH7EeuOz4VpLlwd3g __zzZgHH7EeuOz4VpLlwd3g" bindingType="CAN_BE_BOUND">
+    <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Segment"/>
+  </storyPatternObjects>
+  <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_tZpyYHH7EeuOz4VpLlwd3g" name="segment6" incomingLinks="_70lx8HH7EeuOz4VpLlwd3g _AqH9gHH8EeuOz4VpLlwd3g" bindingType="CAN_BE_BOUND">
+    <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Segment"/>
+  </storyPatternObjects>
+</mlstorypatterns:StoryPattern>

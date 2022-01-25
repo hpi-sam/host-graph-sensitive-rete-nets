@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mlstorypatterns="http://www.mdelab.de/mlstorypatterns/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_QaKu0XH8EeuOz4VpLlwd3g" type="Mlstorypatterns" name="RouteSensor.mlsp_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_Scl5kHH8EeuOz4VpLlwd3g" type="2003" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ScmgoHH8EeuOz4VpLlwd3g" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ScmgoXH8EeuOz4VpLlwd3g" type="5002"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ScmgonH8EeuOz4VpLlwd3g" type="5003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Scmgo3H8EeuOz4VpLlwd3g" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ScmgpHH8EeuOz4VpLlwd3g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ScmgpXH8EeuOz4VpLlwd3g"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ScmgpnH8EeuOz4VpLlwd3g" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Scmgp3H8EeuOz4VpLlwd3g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ScmgqHH8EeuOz4VpLlwd3g"/>
+    </children>
+    <element xmi:type="mlstorypatterns:StoryPatternObject" href="RouteSensor.mlsp#_SckEYHH8EeuOz4VpLlwd3g"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Scl5kXH8EeuOz4VpLlwd3g" x="84" y="180"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_TnHL8HH8EeuOz4VpLlwd3g" type="2003" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_TnHL8nH8EeuOz4VpLlwd3g" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_TnHL83H8EeuOz4VpLlwd3g" type="5002"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_TnHL9HH8EeuOz4VpLlwd3g" type="5003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_TnHL9XH8EeuOz4VpLlwd3g" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_TnHL9nH8EeuOz4VpLlwd3g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_TnHL93H8EeuOz4VpLlwd3g"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_TnHL-HH8EeuOz4VpLlwd3g" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_TnHL-XH8EeuOz4VpLlwd3g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_TnHL-nH8EeuOz4VpLlwd3g"/>
+    </children>
+    <element xmi:type="mlstorypatterns:StoryPatternObject" href="RouteSensor.mlsp#_TnGk4HH8EeuOz4VpLlwd3g"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TnHL8XH8EeuOz4VpLlwd3g" x="480" y="180"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_U_6x8XH8EeuOz4VpLlwd3g" type="2003" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_U_6x83H8EeuOz4VpLlwd3g" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_U_6x9HH8EeuOz4VpLlwd3g" type="5002"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_U_6x9XH8EeuOz4VpLlwd3g" type="5003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_U_6x9nH8EeuOz4VpLlwd3g" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_U_6x93H8EeuOz4VpLlwd3g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_U_6x-HH8EeuOz4VpLlwd3g"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_U_6x-XH8EeuOz4VpLlwd3g" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_U_6x-nH8EeuOz4VpLlwd3g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_U_6x-3H8EeuOz4VpLlwd3g"/>
+    </children>
+    <element xmi:type="mlstorypatterns:StoryPatternObject" href="RouteSensor.mlsp#_U_6x8HH8EeuOz4VpLlwd3g"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_U_6x8nH8EeuOz4VpLlwd3g" x="192" y="180"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_YsM2cHH8EeuOz4VpLlwd3g" type="2003" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_YsM2cnH8EeuOz4VpLlwd3g" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_YsM2c3H8EeuOz4VpLlwd3g" type="5002"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_YsM2dHH8EeuOz4VpLlwd3g" type="5003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_YsM2dXH8EeuOz4VpLlwd3g" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_YsM2dnH8EeuOz4VpLlwd3g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_YsM2d3H8EeuOz4VpLlwd3g"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_YsM2eHH8EeuOz4VpLlwd3g" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_YsM2eXH8EeuOz4VpLlwd3g"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_YsM2enH8EeuOz4VpLlwd3g"/>
+    </children>
+    <element xmi:type="mlstorypatterns:StoryPatternObject" href="RouteSensor.mlsp#_YsMPYHH8EeuOz4VpLlwd3g"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_YsM2cXH8EeuOz4VpLlwd3g" x="360" y="180"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_QaKu0nH8EeuOz4VpLlwd3g"/>
+  <element xmi:type="mlstorypatterns:StoryPattern" href="RouteSensor.mlsp#_QaKu0HH8EeuOz4VpLlwd3g"/>
+  <edges xmi:type="notation:Edge" xmi:id="_bcKcoHH8EeuOz4VpLlwd3g" type="4001" source="_Scl5kHH8EeuOz4VpLlwd3g" target="_U_6x8XH8EeuOz4VpLlwd3g">
+    <children xmi:type="notation:DecorationNode" xmi:id="_bcKcpHH8EeuOz4VpLlwd3g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_bcLDsHH8EeuOz4VpLlwd3g" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_bcLDsXH8EeuOz4VpLlwd3g" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_bcLDsnH8EeuOz4VpLlwd3g" x="-10" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_bcKcoXH8EeuOz4VpLlwd3g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_bcKconH8EeuOz4VpLlwd3g" fontName="Segoe UI"/>
+    <element xmi:type="mlstorypatterns:StoryPatternLink" href="RouteSensor.mlsp#_bcIncHH8EeuOz4VpLlwd3g"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_bcKco3H8EeuOz4VpLlwd3g" points="[24, -1, -263, 0]$[288, -38, 1, -37]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_cyIKAHH8EeuOz4VpLlwd3g" type="4001" source="_U_6x8XH8EeuOz4VpLlwd3g" target="_YsM2cHH8EeuOz4VpLlwd3g">
+    <children xmi:type="notation:DecorationNode" xmi:id="_cyIxEHH8EeuOz4VpLlwd3g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_cyIxEXH8EeuOz4VpLlwd3g" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_cyIxEnH8EeuOz4VpLlwd3g" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_cyIxE3H8EeuOz4VpLlwd3g" x="-10" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_cyIKAXH8EeuOz4VpLlwd3g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_cyIKAnH8EeuOz4VpLlwd3g" fontName="Segoe UI"/>
+    <element xmi:type="mlstorypatterns:StoryPatternLink" href="RouteSensor.mlsp#_cyHi8HH8EeuOz4VpLlwd3g"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_cyIKA3H8EeuOz4VpLlwd3g" points="[0, 0, 203, -162]$[-211, 146, -8, -16]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_f2D1EHH8EeuOz4VpLlwd3g" type="4001" source="_YsM2cHH8EeuOz4VpLlwd3g" target="_TnHL8HH8EeuOz4VpLlwd3g">
+    <children xmi:type="notation:DecorationNode" xmi:id="_f2D1FHH8EeuOz4VpLlwd3g" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_f2D1FXH8EeuOz4VpLlwd3g" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_f2D1FnH8EeuOz4VpLlwd3g" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_f2D1F3H8EeuOz4VpLlwd3g" x="-10" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_f2D1EXH8EeuOz4VpLlwd3g"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_f2D1EnH8EeuOz4VpLlwd3g" fontName="Segoe UI"/>
+    <element xmi:type="mlstorypatterns:StoryPatternLink" href="RouteSensor.mlsp#_f2DOAHH8EeuOz4VpLlwd3g"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_f2D1E3H8EeuOz4VpLlwd3g" points="[0, 0, 0, 161]$[-3, -147, -3, 14]"/>
+  </edges>
+</notation:Diagram>

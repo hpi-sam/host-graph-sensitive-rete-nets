@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mlstorypatterns="http://www.mdelab.de/mlstorypatterns/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_6liZ4HdWEeuAZYoLiVi7ug" type="Mlstorypatterns" name="RouteSensorInject.mlsp_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_-I2voHdWEeuAZYoLiVi7ug" type="2003" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_-I2vondWEeuAZYoLiVi7ug" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-I2vo3dWEeuAZYoLiVi7ug" type="5002"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-I2vpHdWEeuAZYoLiVi7ug" type="5003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-I2vpXdWEeuAZYoLiVi7ug" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_-I2vpndWEeuAZYoLiVi7ug"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_-I2vp3dWEeuAZYoLiVi7ug"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_-I2vqHdWEeuAZYoLiVi7ug" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_-I2vqXdWEeuAZYoLiVi7ug"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_-I2vqndWEeuAZYoLiVi7ug"/>
+    </children>
+    <element xmi:type="mlstorypatterns:StoryPatternObject" href="RouteSensorInject.mlsp#_-I0TYHdWEeuAZYoLiVi7ug"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-I2voXdWEeuAZYoLiVi7ug" x="96" y="204"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="__FldoHdWEeuAZYoLiVi7ug" type="2003" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="__FldondWEeuAZYoLiVi7ug" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="__Fldo3dWEeuAZYoLiVi7ug" type="5002"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="__FldpHdWEeuAZYoLiVi7ug" type="5003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="__FldpXdWEeuAZYoLiVi7ug" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="__FldpndWEeuAZYoLiVi7ug"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="__Fldp3dWEeuAZYoLiVi7ug"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="__FldqHdWEeuAZYoLiVi7ug" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="__FldqXdWEeuAZYoLiVi7ug"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="__FldqndWEeuAZYoLiVi7ug"/>
+    </children>
+    <element xmi:type="mlstorypatterns:StoryPatternObject" href="RouteSensorInject.mlsp#__FjBYHdWEeuAZYoLiVi7ug"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="__FldoXdWEeuAZYoLiVi7ug" x="264" y="204"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_6liZ4XdWEeuAZYoLiVi7ug"/>
+  <element xmi:type="mlstorypatterns:StoryPattern" href="RouteSensorInject.mlsp#_6lhy0HdWEeuAZYoLiVi7ug"/>
+  <edges xmi:type="notation:Edge" xmi:id="_EYycoHdXEeuAZYoLiVi7ug" type="4001" source="_-I2voHdWEeuAZYoLiVi7ug" target="__FldoHdWEeuAZYoLiVi7ug">
+    <children xmi:type="notation:DecorationNode" xmi:id="_EYzDsndXEeuAZYoLiVi7ug" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_EYzDs3dXEeuAZYoLiVi7ug" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_EYzDtHdXEeuAZYoLiVi7ug" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_EYzDtXdXEeuAZYoLiVi7ug" x="-10" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_EYycoXdXEeuAZYoLiVi7ug"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_EYzDsHdXEeuAZYoLiVi7ug" fontName="Segoe UI"/>
+    <element xmi:type="mlstorypatterns:StoryPatternLink" href="RouteSensorInject.mlsp#_EYxOgHdXEeuAZYoLiVi7ug"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_EYzDsXdXEeuAZYoLiVi7ug" points="[0, -1, -146, -2]$[142, -36, -4, -37]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_EY0R0HdXEeuAZYoLiVi7ug" id="(1.0,0.4864864864864865)"/>
+  </edges>
+</notation:Diagram>
