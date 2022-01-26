@@ -1,6 +1,7 @@
 Installation:
 - download and install Eclipse Modeling Tools (e.g. via the Eclipse installer from https://www.eclipse.org/downloads/)
-- install SDM-related Eclipse-Plugins (required for reading query specifications , i.e., .mlsp-files) from our update-site: https://www.hpi.uni-potsdam.de/giese/update-site/
+- install SDM-related Eclipse-Plugins (required for reading query specifications , i.e., .mlsp-files) from our update-site: https://www.hpi.uni-potsdam.de/giese/update-site/ ("SDM Metamodels, Editors, and Interpreters" category)
+- install the VIATRA Eclipse-Plugins from the VIATRA update-site: http://download.eclipse.org/viatra/updates/release/2.4.0
 
 LDBC SNB
 - the mdelab.mlsdm.ldbc.snb.incremental project contains classes with main methods for query execution using our RETE implementation and different construction techniques
