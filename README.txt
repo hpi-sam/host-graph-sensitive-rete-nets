@@ -9,8 +9,11 @@ LDBC SNB
 - .mlsp (required for ExecuteDynamicIncremental, ExecutePeriodicIncremental, and ExecuteStaticIncremental) and .gdn (required for ExecuteGDNIncremental) specifications of the adapted benchmark queries used in our evaluation can be found in ldbc_snb/resources/rules
 - the mdelab.ldbc.snb.viatra.patterns.plain project contains a class with a main method for query execution
 
-
 Train Benchmark
 - the Train Benchmark is available under https://github.com/ftsrg/trainbenchmark
 - the project trainbenchmark-tool-sdm contains an implementation of the Train Benchmark with our RETE net construction technique and simple graph queries
 - the project trainbenchmark-tool-viatra-patterns replaces the Train Benchmark project with the same name and contains simple graph query versions of the benchmark queries in VIATRA's query language
+
+Tests
+- the rete/de.mdelab.mlsdm.incremental.rete.tests project contains test cases for validating the host-graph-sensitive rete net construction techniques for a number of simple queries (SimpleQueryTest) and more complex queries from the LDBC SNB (LDBCQueryTest)
+- as host graph for the tests, a small dataset generated with the LDBC SNB data generator (https://github.com/ldbc/ldbc_snb_datagen_hadoop) is used

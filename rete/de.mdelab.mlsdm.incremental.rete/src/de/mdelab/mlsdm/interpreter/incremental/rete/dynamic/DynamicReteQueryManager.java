@@ -701,4 +701,8 @@ public abstract class DynamicReteQueryManager extends ReteQueryManager implement
 		currentPartitioning = null;
 	}
 
+	public DiameterBasedReteBuilder getReteBuilder() {
+		return reteBuilder;
+	}
+
 }

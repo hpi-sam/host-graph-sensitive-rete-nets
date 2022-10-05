@@ -4,8 +4,10 @@ Bundle-Name: Rete
 Bundle-SymbolicName: de.mdelab.mlsdm.incremental.rete
 Bundle-Version: 1.0.0.qualifier
 Export-Package: de.mdelab.mlsdm.interpreter.incremental.rete,
+ de.mdelab.mlsdm.interpreter.incremental.rete.diameter,
  de.mdelab.mlsdm.interpreter.incremental.rete.dynamic,
- de.mdelab.mlsdm.interpreter.incremental.rete.nodes
+ de.mdelab.mlsdm.interpreter.incremental.rete.nodes,
+ de.mdelab.mlsdm.interpreter.incremental.rete.util
 Require-Bundle: de.mdelab.mlsdm.interpreter.incremental,
  de.mdelab.mlstorypatterns,
  de.mdelab.mlsdm.gdn,
