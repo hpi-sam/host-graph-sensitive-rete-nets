@@ -17,3 +17,7 @@ Train Benchmark
 Tests
 - the rete/de.mdelab.mlsdm.incremental.rete.tests project contains test cases for validating the host-graph-sensitive rete net construction techniques for a number of simple queries (SimpleQueryTest) and more complex queries from the LDBC SNB (LDBCQueryTest)
 - as host graph for the tests, a small dataset generated with the LDBC SNB data generator (https://github.com/ldbc/ldbc_snb_datagen_hadoop) is used
+
+Wiki
+
+- additional measurement results and visualizations of the test queries can be found in the wiki
