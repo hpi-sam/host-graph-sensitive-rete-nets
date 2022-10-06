@@ -19,5 +19,4 @@ Tests
 - as host graph for the tests, a small dataset generated with the LDBC SNB data generator (https://github.com/ldbc/ldbc_snb_datagen_hadoop) is used
 
 Wiki
-
 - additional measurement results and visualizations of the test queries can be found in the wiki
