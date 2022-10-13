@@ -16,8 +16,10 @@ Train Benchmark
 - experiments have to be run using the Train Benchmark framework available under https://github.com/ftsrg/trainbenchmark
 
 Tests
-- the rete/de.mdelab.mlsdm.incremental.rete.tests project contains test cases for validating the host-graph-sensitive rete net construction techniques for a number of simple queries (SimpleQueryTest) and more complex queries from the LDBC SNB (LDBCQueryTest)
-- as host graph for the tests, a small dataset generated with the LDBC SNB data generator (https://github.com/ldbc/ldbc_snb_datagen_hadoop) is used
+- the ldbc_snb/de.mdelab.ldbc.snb.incremental.rete.tests project contains test cases for validating the host-graph-sensitive rete net construction techniques for a number of simple queries (SimpleQueryTest) and more complex queries from the adapted LDBC SNB (LDBCQueryTest)
+- as host graph for these tests, a small dataset generated with the LDBC SNB data generator (https://github.com/ldbc/ldbc_snb_datagen_hadoop) is used
+- the trainbenchmark/de.mdelab.trainbenchmark.rete.tests project contains test cases for validating the host-graph-sensitive rete net construction techniques for the adapted Train Benchmark queries
+- as host graph for these tests, a small dataset generated with the Train Benchmark framework (https://github.com/ftsrg/trainbenchmark) is used
 
 Wiki
 - additional measurement results and visualizations of the test queries can be found in the wiki
