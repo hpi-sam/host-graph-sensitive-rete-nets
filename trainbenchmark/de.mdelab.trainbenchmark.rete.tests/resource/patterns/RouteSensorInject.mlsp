@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mlstorypatterns:StoryPattern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mlstorypatterns="http://www.mdelab.de/mlstorypatterns/1.0" uuid="_6lhy0HdWEeuAZYoLiVi7ug">
+  <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_EYxOgHdXEeuAZYoLiVi7ug" source="_-I0TYHdWEeuAZYoLiVi7ug" target="__FjBYHdWEeuAZYoLiVi7ug">
+    <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Route/requires"/>
+  </storyPatternLinks>
+  <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_-I0TYHdWEeuAZYoLiVi7ug" name="route" outgoingLinks="_EYxOgHdXEeuAZYoLiVi7ug" bindingType="CAN_BE_BOUND">
+    <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Route"/>
+  </storyPatternObjects>
+  <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="__FjBYHdWEeuAZYoLiVi7ug" name="sensor" incomingLinks="_EYxOgHdXEeuAZYoLiVi7ug" bindingType="CAN_BE_BOUND">
+    <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Sensor"/>
+  </storyPatternObjects>
+</mlstorypatterns:StoryPattern>

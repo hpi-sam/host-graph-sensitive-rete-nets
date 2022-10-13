@@ -1,12 +1,12 @@
-package de.mdelab.mlsdm.incremental.rete.tests;
+package de.mdelab.ldbc.snb.incremental.rete.tests;
 
-import org.junit.BeforeClass;
+import org.junit.Before;
 import org.junit.Test;
 
-public class LDBCQueryTest extends QueryTest {
+public class BenchmarkQueryTest extends LDBCQueryTest {
 
-	@BeforeClass
-	public static void setUp() {
+	@Before
+	public void setUp() {
 		registerEPackages();
 	}
 

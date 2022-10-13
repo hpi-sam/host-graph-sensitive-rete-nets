@@ -1,4 +1,4 @@
-package de.mdelab.mlsdm.incremental.rete.tests;
+package de.mdelab.ldbc.snb.incremental.rete.tests;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 import org.eclipse.emf.ecore.EObject;
-import org.junit.BeforeClass;
+import org.junit.Before;
 import org.junit.Test;
 
 import de.mdelab.mlsdm.interpreter.incremental.rete.dynamic.DynamicReteQueryManager;
@@ -20,16 +20,16 @@ import de.mdelab.mlsdm.interpreter.incremental.rete.nodes.ReteNodeInput;
 import de.mdelab.mlstorypatterns.StoryPattern;
 import de.mdelab.sdm.interpreter.core.SDMException;
 
-public class SimpleQueryTest extends QueryTest {
+public class SimpleQueryTest extends LDBCQueryTest {
 
-	@BeforeClass
-	public static void setUp() {
+	@Before
+	public void setUp() {
 		registerEPackages();
 	}
 
 	@Test
 	public void testSimpleNodeInputConstruction() {
-		StoryPattern pattern = readPattern("resource/patterns/simple_node_input.mlsp");
+		StoryPattern pattern = readPattern("simple_node_input.mlsp");
 		EObject model = getFullModel("persons_50.log");
 		
 		DynamicReteQueryManager manager = null;
@@ -53,7 +53,7 @@ public class SimpleQueryTest extends QueryTest {
 
 	@Test
 	public void testSimpleEdgeInputConstruction() {
-		StoryPattern pattern = readPattern("resource/patterns/simple_edge_input.mlsp");
+		StoryPattern pattern = readPattern("simple_edge_input.mlsp");
 		EObject model = getFullModel("persons_50.log");
 		
 		DynamicReteQueryManager manager = null;
@@ -81,7 +81,7 @@ public class SimpleQueryTest extends QueryTest {
 
 	@Test
 	public void testSimpleJoinConstruction() {
-		StoryPattern pattern = readPattern("resource/patterns/simple_join.mlsp");
+		StoryPattern pattern = readPattern("simple_join.mlsp");
 		EObject model = getFullModel("persons_50.log");
 		
 		DynamicReteQueryManager manager = null;
@@ -135,7 +135,7 @@ public class SimpleQueryTest extends QueryTest {
 
 	@Test
 	public void testSimpleAntiJoinConstruction() {
-		StoryPattern pattern = readPattern("resource/patterns/simple_anti_join.mlsp");
+		StoryPattern pattern = readPattern("simple_anti_join.mlsp");
 		EObject model = getFullModel("persons_50.log");
 		
 		DynamicReteQueryManager manager = null;

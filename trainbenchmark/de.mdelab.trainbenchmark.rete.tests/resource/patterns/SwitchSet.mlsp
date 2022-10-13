@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mlstorypatterns:StoryPattern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mlstorypatterns="http://www.mdelab.de/mlstorypatterns/1.0" uuid="_IDlo8HH9EeuOz4VpLlwd3g">
+  <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_XAuWoHH9EeuOz4VpLlwd3g" source="_SAungHH9EeuOz4VpLlwd3g" target="_IY0SEHH9EeuOz4VpLlwd3g">
+    <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Route/entry"/>
+  </storyPatternLinks>
+  <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_YyaWsHH9EeuOz4VpLlwd3g" source="_SAungHH9EeuOz4VpLlwd3g" target="_TaYiEHH9EeuOz4VpLlwd3g">
+    <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Route/follows"/>
+  </storyPatternLinks>
+  <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_aBwesHH9EeuOz4VpLlwd3g" source="_TaYiEHH9EeuOz4VpLlwd3g" target="_UlOkkHH9EeuOz4VpLlwd3g">
+    <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//SwitchPosition/target"/>
+  </storyPatternLinks>
+  <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_IY0SEHH9EeuOz4VpLlwd3g" name="semaphore" incomingLinks="_XAuWoHH9EeuOz4VpLlwd3g" bindingType="CAN_BE_BOUND">
+    <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Semaphore"/>
+  </storyPatternObjects>
+  <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_SAungHH9EeuOz4VpLlwd3g" name="route" outgoingLinks="_XAuWoHH9EeuOz4VpLlwd3g _YyaWsHH9EeuOz4VpLlwd3g" bindingType="CAN_BE_BOUND">
+    <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Route"/>
+  </storyPatternObjects>
+  <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_TaYiEHH9EeuOz4VpLlwd3g" name="swP" outgoingLinks="_aBwesHH9EeuOz4VpLlwd3g" incomingLinks="_YyaWsHH9EeuOz4VpLlwd3g" bindingType="CAN_BE_BOUND">
+    <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//SwitchPosition"/>
+  </storyPatternObjects>
+  <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_UlOkkHH9EeuOz4VpLlwd3g" name="sw" incomingLinks="_aBwesHH9EeuOz4VpLlwd3g" bindingType="CAN_BE_BOUND">
+    <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Switch"/>
+  </storyPatternObjects>
+</mlstorypatterns:StoryPattern>

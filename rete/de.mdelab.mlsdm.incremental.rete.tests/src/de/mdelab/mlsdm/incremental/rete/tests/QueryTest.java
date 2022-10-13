@@ -21,8 +21,6 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 
-import de.mdelab.ldbc_snb.Ldbc_snbPackage;
-import de.mdelab.ldbc_snb.log.LDBC_SNBLogReader;
 import de.mdelab.mlexpressions.MLExpression;
 import de.mdelab.mlsdm.Activity;
 import de.mdelab.mlsdm.ActivityEdge;
@@ -47,149 +45,7 @@ import de.mdelab.sdm.interpreter.core.patternmatcher.searchModelBased.PatternNod
 import de.mdelab.sdm.interpreter.core.patternmatcher.searchModelBased.expressions.ExpressionAnalyzerManager;
 import de.mdelab.sdm.interpreter.core.variables.NotifierVariablesScope;
 
-public class QueryTest {
-
-	public void testBatchQuery(String queryName, String dataSet) {
-		StoryPattern pattern = readPattern("resource/patterns/" + queryName);
-		EObject model = getFullModel(dataSet);
-		
-		Set<Map<String, Object>> result = null;
-		try {
-			result = findMatchesHostGraphSensitiveRete(pattern, model);
-		} catch (SDMException e) {
-			fail();
-		}
-		
-		Set<Map<String, Object>> reference = null;
-		try {
-			reference = findMatchesReference(pattern, model);
-		} catch (SDMException e) {
-			fail();
-		}
-
-		assertEquals(result, reference);
-	}
-
-	public void testIncrementalQueryStatic(String queryName, String dataSet) {
-		StoryPattern pattern = readPattern("resource/patterns/" + queryName);
-		LDBC_SNBLogReader logReader = getLogReader(dataSet);
-		
-		//replay prefix
-		
-		for(int i = 0; i < logReader.getLogSize() - 1000; i++) {
-			logReader.executeNextAction();
-		}
-		EObject model = logReader.getModel();
-		
-		//test correctness of result after prefix
-		
-		DynamicReteQueryManager queryManager = null;
-		try {
-			queryManager = createStaticReteQueryManager(pattern, model);
-		} catch (SDMException e1) {
-			fail();
-		}
-		
-		Set<Map<String, Object>> result = getMatches(queryManager);
-		
-		Set<Map<String, Object>> reference = null;
-		try {
-			reference = findMatchesReference(pattern, model);
-		} catch (SDMException e) {
-			fail();
-		}
-
-		assertEquals(result, reference);
-		
-		//replay remaining log
-		
-		while(logReader.hasNextElement()) {
-			logReader.executeNextAction();
-		}
-
-		//test correctness of result for final model
-		
-		queryManager.flushUnhandledEvents();
-		result = getMatches(queryManager);
-		
-		try {
-			reference = findMatchesReference(pattern, model);
-		} catch (SDMException e) {
-			fail();
-		}
-		
-		assertEquals(result, reference);
-	}
-
-	public void testIncrementalQueryDynamic(String queryName, String dataSet) {
-		StoryPattern pattern = readPattern("resource/patterns/" + queryName);
-		LDBC_SNBLogReader logReader = getLogReader(dataSet);
-		EObject model = logReader.getModel();
-
-		DynamicReteQueryManager queryManager = null;
-		try {
-			queryManager = createDynamicReteQueryManager(pattern, model);
-		} catch (SDMException e1) {
-			fail();
-		}
-		
-		//replay prefix
-
-		for(int i = 0; i < logReader.getLogSize() - 1000; i++) {
-			logReader.executeNextAction();
-		}
-		
-		//test correctness of result after prefix
-		
-		queryManager.flushUnhandledEvents();
-		Set<Map<String, Object>> result = getMatches(queryManager);
-		
-		Set<Map<String, Object>> reference = null;
-		try {
-			reference = findMatchesReference(pattern, model);
-		} catch (SDMException e) {
-			fail();
-		}
-
-		assertEquals(result, reference);
-		
-		//replay remaining log
-		
-		while(logReader.hasNextElement()) {
-			logReader.executeNextAction();
-		}
-
-		//test correctness of result for final model
-		
-		queryManager.flushUnhandledEvents();
-		result = getMatches(queryManager);
-		
-		try {
-			reference = findMatchesReference(pattern, model);
-		} catch (SDMException e) {
-			fail();
-		}
-		
-		assertEquals(result, reference);
-	}
-
-	protected EObject getFullModel(String dataSet) {
-		LDBC_SNBLogReader logReader = getLogReader(dataSet);
-		while(logReader.hasNextElement()) {
-			logReader.executeNextAction();
-		}
-		return logReader.getModel();
-	}
-
-	protected LDBC_SNBLogReader getLogReader(String dataSet) {
-		try {
-			LDBC_SNBLogReader logReader = new LDBC_SNBLogReader("resource/instances/" + dataSet);
-			return logReader;
-		} catch (IOException e1) {
-			fail();
-		}
-		return null;
-	}
+public abstract class QueryTest {
 
 	protected DynamicReteQueryManager createStaticReteQueryManager(StoryPattern pattern, EObject host) throws SDMException {
 		StaticNetQueryManager queryManager = new StaticNetQueryManager(pattern, host);
@@ -206,7 +62,7 @@ public class QueryTest {
 		return getMatches(manager);
 	}
 
-	private Set<Map<String, Object>> getMatches(
+	protected Set<Map<String, Object>> getMatches(
 			DynamicReteQueryManager manager) {
 		String[] tupleNames = getTupleNames(manager);
 		Set<Map<String, Object>> matches = new HashSet<Map<String, Object>>();
@@ -267,24 +123,46 @@ public class QueryTest {
 		return names;
 	}
 	
-	public static void registerEPackages() {
+	public void registerEPackages() {
 		registerEPackage(EcorePackage.eINSTANCE);
 		registerEPackage(MlstorypatternsPackage.eINSTANCE);
 		registerEPackage(MlsdmPackage.eINSTANCE);
-		registerEPackage(Ldbc_snbPackage.eINSTANCE);
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("mlsp", new XMIResourceFactoryImpl());
 	}
-	
-	public static void registerEPackage(EPackage pkg) {
+
+	public void testBatchQuery(String queryName, String dataSet) {
+		StoryPattern pattern = readPattern(queryName);
+		EObject model = getFullModel(dataSet);
+		
+		Set<Map<String, Object>> result = null;
+		try {
+			result = findMatchesHostGraphSensitiveRete(pattern, model);
+		} catch (SDMException e) {
+			fail();
+		}
+		
+		Set<Map<String, Object>> reference = null;
+		try {
+			reference = findMatchesReference(pattern, model);
+		} catch (SDMException e) {
+			fail();
+		}
+
+		assertEquals(result, reference);
+	}
+
+	protected abstract EObject getFullModel(String string);
+
+	public void registerEPackage(EPackage pkg) {
 		//register ResourceFactory for loading models
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put(pkg.getName().toLowerCase(), new XMIResourceFactoryImpl());
 	}
 	
-	public static StoryPattern readPattern(String ruleFile) {
-		return (StoryPattern) readEObject(ruleFile);
+	public StoryPattern readPattern(String ruleFile) {
+		return (StoryPattern) readEObject("resource/patterns/" + ruleFile);
 	}
 	
-	public static EObject readEObject(String file) {
+	public EObject readEObject(String file) {
 		ResourceSet rs = new ResourceSetImpl();
 		Resource r = rs.getResource(URI.createFileURI(file), true);
 		try {

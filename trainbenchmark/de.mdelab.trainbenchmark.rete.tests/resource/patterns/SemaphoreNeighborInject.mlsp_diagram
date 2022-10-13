@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mlstorypatterns="http://www.mdelab.de/mlstorypatterns/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_IEq4gXdXEeuAZYoLiVi7ug" type="Mlstorypatterns" name="SemaphoreNeighborInject.mlsp_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_J7fQMHdXEeuAZYoLiVi7ug" type="2003" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_J7f3QHdXEeuAZYoLiVi7ug" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_J7f3QXdXEeuAZYoLiVi7ug" type="5002"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_J7f3QndXEeuAZYoLiVi7ug" type="5003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_J7f3Q3dXEeuAZYoLiVi7ug" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_J7f3RHdXEeuAZYoLiVi7ug"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_J7f3RXdXEeuAZYoLiVi7ug"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_J7f3RndXEeuAZYoLiVi7ug" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_J7f3R3dXEeuAZYoLiVi7ug"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_J7f3SHdXEeuAZYoLiVi7ug"/>
+    </children>
+    <element xmi:type="mlstorypatterns:StoryPatternObject" href="SemaphoreNeighborInject.mlsp#_J7cz8HdXEeuAZYoLiVi7ug"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_J7fQMXdXEeuAZYoLiVi7ug" x="84" y="204"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_K7pssHdXEeuAZYoLiVi7ug" type="2003" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_K7pssndXEeuAZYoLiVi7ug" type="5001"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_K7pss3dXEeuAZYoLiVi7ug" type="5002"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_K7pstHdXEeuAZYoLiVi7ug" type="5003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_K7pstXdXEeuAZYoLiVi7ug" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K7pstndXEeuAZYoLiVi7ug"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K7pst3dXEeuAZYoLiVi7ug"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_K7psuHdXEeuAZYoLiVi7ug" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_K7psuXdXEeuAZYoLiVi7ug"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_K7psundXEeuAZYoLiVi7ug"/>
+    </children>
+    <element xmi:type="mlstorypatterns:StoryPatternObject" href="SemaphoreNeighborInject.mlsp#_K7n3gHdXEeuAZYoLiVi7ug"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_K7pssXdXEeuAZYoLiVi7ug" x="288" y="204"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_IEq4gndXEeuAZYoLiVi7ug"/>
+  <element xmi:type="mlstorypatterns:StoryPattern" href="SemaphoreNeighborInject.mlsp#_IEq4gHdXEeuAZYoLiVi7ug"/>
+  <edges xmi:type="notation:Edge" xmi:id="_MqksoHdXEeuAZYoLiVi7ug" type="4001" source="_J7fQMHdXEeuAZYoLiVi7ug" target="_K7pssHdXEeuAZYoLiVi7ug">
+    <children xmi:type="notation:DecorationNode" xmi:id="_MqkspHdXEeuAZYoLiVi7ug" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_MqkspXdXEeuAZYoLiVi7ug" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_MqlTsHdXEeuAZYoLiVi7ug" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_MqlTsXdXEeuAZYoLiVi7ug" x="-10" y="-10"/>
+    </children>
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_MqksoXdXEeuAZYoLiVi7ug"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_MqksondXEeuAZYoLiVi7ug" fontName="Segoe UI"/>
+    <element xmi:type="mlstorypatterns:StoryPatternLink" href="SemaphoreNeighborInject.mlsp#_MqkFkHdXEeuAZYoLiVi7ug"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Mqkso3dXEeuAZYoLiVi7ug" points="[0, 7, -182, 4]$[190, 40, 8, 37]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MqnI4HdXEeuAZYoLiVi7ug" id="(1.0,0.4594594594594595)"/>
+  </edges>
+</notation:Diagram>

@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Tests
+Bundle-SymbolicName: de.mdelab.trainbenchmark.rete.tests
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Automatic-Module-Name: de.mdelab.trainbenchmark.rete.tests
+Require-Bundle: trainbenchmark-format-emf-model;bundle-version="1.0.0",
+ de.mdelab.mlsdm.incremental.rete.tests,
+ org.junit,
+ de.mdelab.mlstorypatterns,
+ de.mdelab.sdm.interpreter.core;bundle-version="1.0.0"
