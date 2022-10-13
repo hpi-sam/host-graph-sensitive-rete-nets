@@ -20,6 +20,7 @@ Tests
 - as host graph for these tests, a small dataset generated with the LDBC SNB data generator (https://github.com/ldbc/ldbc_snb_datagen_hadoop) is used
 - the trainbenchmark/de.mdelab.trainbenchmark.rete.tests project contains test cases for validating the host-graph-sensitive rete net construction techniques for the adapted Train Benchmark queries
 - as host graph for these tests, a small dataset generated with the Train Benchmark framework (https://github.com/ftsrg/trainbenchmark) is used
+- note that the execution of the test cases related to the Train Benchmark requires a project from the Train Benchmark framework
 
 Wiki
 - additional measurement results and visualizations of the test queries can be found in the wiki
