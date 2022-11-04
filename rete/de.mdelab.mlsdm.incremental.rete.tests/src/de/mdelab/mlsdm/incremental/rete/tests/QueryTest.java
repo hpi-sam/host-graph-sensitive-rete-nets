@@ -26,11 +26,20 @@ import de.mdelab.mlsdm.Activity;
 import de.mdelab.mlsdm.ActivityEdge;
 import de.mdelab.mlsdm.ActivityNode;
 import de.mdelab.mlsdm.MlsdmPackage;
+import de.mdelab.mlsdm.gdn.GDN;
+import de.mdelab.mlsdm.gdn.GdnPackage;
 import de.mdelab.mlsdm.interpreter.MLSDMExpressionInterpreterManager;
 import de.mdelab.mlsdm.interpreter.facade.MLSDMMetamodelFacadeFactory;
+import de.mdelab.mlsdm.interpreter.incremental.QueryManagerNotificationReceiver;
+import de.mdelab.mlsdm.interpreter.incremental.change.SDMChangeEvent;
+import de.mdelab.mlsdm.interpreter.incremental.rete.GDNReteBuilder;
+import de.mdelab.mlsdm.interpreter.incremental.rete.ReteNet;
+import de.mdelab.mlsdm.interpreter.incremental.rete.ReteQueryManager;
+import de.mdelab.mlsdm.interpreter.incremental.rete.ReteSDMWrapper;
 import de.mdelab.mlsdm.interpreter.incremental.rete.dynamic.DynamicReteQueryManager;
 import de.mdelab.mlsdm.interpreter.incremental.rete.dynamic.NetSizeBasedQueryManager;
 import de.mdelab.mlsdm.interpreter.incremental.rete.dynamic.StaticNetQueryManager;
+import de.mdelab.mlsdm.interpreter.incremental.rete.nodes.ReteResultProvider;
 import de.mdelab.mlsdm.interpreter.incremental.rete.util.ReteTuple;
 import de.mdelab.mlsdm.interpreter.notifications.MLSDMNotificationEmitter;
 import de.mdelab.mlsdm.interpreter.searchModel.model.MLSDMSearchModel;
@@ -124,6 +133,7 @@ public abstract class QueryTest {
 	}
 	
 	public void registerEPackages() {
+		registerEPackage(GdnPackage.eINSTANCE);
 		registerEPackage(EcorePackage.eINSTANCE);
 		registerEPackage(MlstorypatternsPackage.eINSTANCE);
 		registerEPackage(MlsdmPackage.eINSTANCE);
@@ -151,15 +161,84 @@ public abstract class QueryTest {
 		assertEquals(result, reference);
 	}
 
+	public void testBatchQueryGDN(String queryName, String patternName, String dataSet) {
+		//this tests only equality of result sizes due to the difficulty to convert between result formats
+		GDN gdn = readGDN(queryName);
+		StoryPattern pattern = readPattern(patternName);
+		EObject model = getFullModel(dataSet);
+		
+		int result = -1;
+		result = countMatchesGDN(gdn, model);
+		
+		int reference = -2;
+		try {
+			reference = findMatchesReference(pattern, model).size();
+		} catch (SDMException e) {
+			fail();
+		}
+
+		assertEquals(result, reference);
+	}
+
+	protected int countMatchesGDN(GDN gdn, EObject model) {
+		ReteQueryManager queryManager = createGDNQueryManager();
+		ReteResultProvider resultProvider = getGDNResultProvider(gdn, queryManager, model);
+		return countMatches(resultProvider);
+	}
+	
+	protected int countMatches(ReteResultProvider resultProvider) {
+		return resultProvider.getTuples(Collections.emptyList()).size();
+	}
+
+	protected ReteQueryManager createGDNQueryManager() {
+		ReteQueryManager queryManager = new ReteQueryManager() {
+
+			@Override
+			public void flushUnhandledEvents() {
+				FlushStatus previousFlushing = flushing;
+				flushing = FlushStatus.FLUSH;
+				for(SDMChangeEvent change:unhandledChanges) {
+					notifyUpdateStart();
+					flushEvent(change);
+					notifyUpdateEnd();
+					notifyCustom();
+				}
+				unhandledChanges.clear();
+				flushing = previousFlushing;
+			}
+
+			protected void notifyCustom() {
+				for(QueryManagerNotificationReceiver receiver:notificationReceivers) {
+					receiver.notifyCustom();
+				}
+			}
+
+		};
+		return queryManager;
+	}
+
+	protected ReteResultProvider getGDNResultProvider(GDN gdn, ReteQueryManager queryManager, EObject model) {
+		ReteResultProvider resultProvider = ((ReteSDMWrapper)new GDNReteBuilder().buildReteQuery(gdn, queryManager)).getResultProvider();
+		ReteNet reteNet = resultProvider.getNet();
+		queryManager.registerEObject(model);
+		queryManager.registerReteNet(reteNet);
+		
+		return resultProvider;
+	}
+	
 	protected abstract EObject getFullModel(String string);
 
 	public void registerEPackage(EPackage pkg) {
 		//register ResourceFactory for loading models
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put(pkg.getName().toLowerCase(), new XMIResourceFactoryImpl());
 	}
-	
+
 	public StoryPattern readPattern(String ruleFile) {
 		return (StoryPattern) readEObject("resource/patterns/" + ruleFile);
+	}
+
+	public GDN readGDN(String ruleFile) {
+		return (GDN) readEObject("resource/gdns/" + ruleFile);
 	}
 	
 	public EObject readEObject(String file) {

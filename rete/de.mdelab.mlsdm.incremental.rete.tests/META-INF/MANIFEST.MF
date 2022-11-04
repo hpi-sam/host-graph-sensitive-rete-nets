@@ -13,5 +13,6 @@ Require-Bundle: de.mdelab.mlsdm.incremental.rete;bundle-version="1.0.0",
  de.mdelab.expressions.interpreter.core;bundle-version="1.0.0",
  de.mdelab.ldbc.snb,
  org.junit,
- de.mdelab.mlstorypatterns
+ de.mdelab.mlstorypatterns,
+ de.mdelab.mlsdm.gdn
 Export-Package: de.mdelab.mlsdm.incremental.rete.tests

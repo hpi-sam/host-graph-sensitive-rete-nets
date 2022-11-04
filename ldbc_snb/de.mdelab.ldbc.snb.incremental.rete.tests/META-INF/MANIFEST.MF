@@ -13,4 +13,6 @@ Require-Bundle: de.mdelab.mlsdm.incremental.rete.tests;bundle-version="1.0.0",
  de.mdelab.sdm.interpreter.core,
  de.mdelab.mlsdm,
  de.mdelab.ldbc.snb,
- de.mdelab.ldbc.snb.log
+ de.mdelab.ldbc.snb.log,
+ de.mdelab.mlsdm.gdn,
+ de.mdelab.mlsdm.interpreter.incremental;bundle-version="1.0.0"

@@ -28,7 +28,7 @@ public class TrainBenchmarkQueryTest extends QueryTest {
 		return readEObject("resource/instances/" + dataSet);
 	}
 
-	//batch tests
+	//batch tests (STATIC/DYNAMIC strategy)
 
 	@Test
 	public void testConnectedSegmentsBatch() {
@@ -88,6 +88,68 @@ public class TrainBenchmarkQueryTest extends QueryTest {
 	@Test
 	public void testSwitchSetInjectBatch() {
 		testBatchQuery("SwitchSetInject.mlsp", "railway-inject-2.xmi");
+	}
+
+	//batch tests GDN (EMULATE strategy)
+
+	@Test
+	public void testConnectedSegmentsBatchGDN() {
+		testBatchQueryGDN("ConnectedSegments.gdn", "ConnectedSegments.mlsp", "railway-inject-2.xmi");
+	}
+
+	@Test
+	public void testConnectedSegmentsInjectBatchGDN() {
+		testBatchQueryGDN("ConnectedSegmentsInject.gdn", "ConnectedSegmentsInject.mlsp", "railway-inject-2.xmi");
+	}
+
+	@Test
+	public void testPosLengthBatchGDN() {
+		testBatchQueryGDN("PosLength.gdn", "PosLength.mlsp", "railway-inject-2.xmi");
+	}
+
+	@Test
+	public void testPosLengthInjectBatchGDN() {
+		testBatchQueryGDN("PosLengthInject.gdn", "PosLengthInject.mlsp", "railway-inject-2.xmi");
+	}
+
+	@Test
+	public void testRouteSensorBatchGDN() {
+		testBatchQueryGDN("RouteSensor.gdn", "RouteSensor.mlsp", "railway-inject-2.xmi");
+	}
+
+	@Test
+	public void testRouteSensorInjectBatchGDN() {
+		testBatchQueryGDN("RouteSensorInject.gdn", "RouteSensorInject.mlsp", "railway-inject-2.xmi");
+	}
+
+	@Test
+	public void testSemaphoreNeighborBatchGDN() {
+		testBatchQueryGDN("SemaphoreNeighbor.gdn", "SemaphoreNeighbor.mlsp", "railway-inject-2.xmi");
+	}
+
+	@Test
+	public void testSemaphoreNeighborInjectBatchGDN() {
+		testBatchQueryGDN("SemaphoreNeighborInject.gdn", "SemaphoreNeighborInject.mlsp", "railway-inject-2.xmi");
+	}
+
+	@Test
+	public void testSwitchMonitoredBatchGDN() {
+		testBatchQueryGDN("SwitchMonitored.gdn", "SwitchMonitored.mlsp", "railway-inject-2.xmi");
+	}
+
+	@Test
+	public void testSwitchMonitoredInjectBatchGDN() {
+		testBatchQueryGDN("SwitchMonitoredInject.gdn", "SwitchMonitoredInject.mlsp", "railway-inject-2.xmi");
+	}
+
+	@Test
+	public void testSwitchSetBatchGDN() {
+		testBatchQueryGDN("SwitchSet.gdn", "SwitchSet.mlsp", "railway-inject-2.xmi");
+	}
+
+	@Test
+	public void testSwitchSetInjectBatchGDN() {
+		testBatchQueryGDN("SwitchSetInject.gdn", "SwitchSetInject.mlsp", "railway-inject-2.xmi");
 	}
 
 }

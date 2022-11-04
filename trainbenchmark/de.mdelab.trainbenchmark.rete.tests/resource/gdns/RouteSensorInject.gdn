@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gdn:GDN xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:gdn="http://www.mdelab.de/mlsdm/gdn/1.0" xmlns:mlstorypatterns="http://www.mdelab.de/mlstorypatterns/1.0" root="//@ownedNodes.0">
+  <ownedNodes>
+    <pattern uuid="_UHTtoHhMEeuaZ-Ad4PKvxg" name="routeSensorInject.1">
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_UHeswHhMEeuaZ-Ad4PKvxg" source="_UHcQgHhMEeuaZ-Ad4PKvxg" target="_UHcQgXhMEeuaZ-Ad4PKvxg">
+        <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Route/requires"/>
+      </storyPatternLinks>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_UHcQgHhMEeuaZ-Ad4PKvxg" name="source" outgoingLinks="_UHeswHhMEeuaZ-Ad4PKvxg" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Route"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_UHcQgXhMEeuaZ-Ad4PKvxg" name="target" incomingLinks="_UHeswHhMEeuaZ-Ad4PKvxg" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Sensor"/>
+      </storyPatternObjects>
+    </pattern>
+  </ownedNodes>
+</gdn:GDN>

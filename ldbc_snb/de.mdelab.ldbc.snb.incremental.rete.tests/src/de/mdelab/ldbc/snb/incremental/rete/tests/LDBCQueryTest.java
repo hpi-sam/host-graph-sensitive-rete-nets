@@ -11,8 +11,11 @@ import org.eclipse.emf.ecore.EObject;
 
 import de.mdelab.ldbc_snb.Ldbc_snbPackage;
 import de.mdelab.ldbc_snb.log.LDBC_SNBLogReader;
+import de.mdelab.mlsdm.gdn.GDN;
 import de.mdelab.mlsdm.incremental.rete.tests.QueryTest;
+import de.mdelab.mlsdm.interpreter.incremental.rete.ReteQueryManager;
 import de.mdelab.mlsdm.interpreter.incremental.rete.dynamic.DynamicReteQueryManager;
+import de.mdelab.mlsdm.interpreter.incremental.rete.nodes.ReteResultProvider;
 import de.mdelab.mlstorypatterns.StoryPattern;
 import de.mdelab.sdm.interpreter.core.SDMException;
 
@@ -22,6 +25,54 @@ public class LDBCQueryTest extends QueryTest {
 	public void registerEPackages() {
 		super.registerEPackages();
 		registerEPackage(Ldbc_snbPackage.eINSTANCE);
+	}
+
+	public void testIncrementalQueryGDN(String queryName, String patternName, String dataSet) {
+		GDN gdn = readGDN(queryName);
+		StoryPattern pattern = readPattern(patternName);
+		LDBC_SNBLogReader logReader = getLogReader(dataSet);
+		
+		//replay prefix
+		
+		for(int i = 0; i < logReader.getLogSize() - 1000; i++) {
+			logReader.executeNextAction();
+		}
+		EObject model = logReader.getModel();
+		
+		//test correctness of result after prefix
+		
+		ReteQueryManager queryManager = createGDNQueryManager();
+		ReteResultProvider resultProvider = getGDNResultProvider(gdn, queryManager, model);
+		
+		int result = countMatches(resultProvider);
+		
+		int reference = -1;
+		try {
+			reference = findMatchesReference(pattern, model).size();
+		} catch (SDMException e) {
+			fail();
+		}
+
+		assertEquals(result, reference);
+		
+		//replay remaining log
+		
+		while(logReader.hasNextElement()) {
+			logReader.executeNextAction();
+		}
+
+		//test correctness of result for final model
+		
+		queryManager.flushUnhandledEvents();
+		result = countMatches(resultProvider);
+		
+		try {
+			reference = findMatchesReference(pattern, model).size();
+		} catch (SDMException e) {
+			fail();
+		}
+		
+		assertEquals(result, reference);
 	}
 
 	public void testIncrementalQueryStatic(String queryName, String dataSet) {

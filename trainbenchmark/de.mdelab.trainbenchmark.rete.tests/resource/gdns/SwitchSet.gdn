@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gdn:GDN xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:gdn="http://www.mdelab.de/mlsdm/gdn/1.0" xmlns:mlexpressions="http://www.mdelab.de/mlexpressions/1.0" xmlns:mlstorypatterns="http://www.mdelab.de/mlstorypatterns/1.0" root="//@ownedNodes.4">
+  <ownedNodes>
+    <pattern uuid="_XedPoHhMEeuX8JqR6jXJTg" name="switchSet.1.1">
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_Xepc4HhMEeuX8JqR6jXJTg" source="_XennsHhMEeuX8JqR6jXJTg" target="_XennsXhMEeuX8JqR6jXJTg">
+        <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//SwitchPosition/target"/>
+      </storyPatternLinks>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_XennsHhMEeuX8JqR6jXJTg" name="source" outgoingLinks="_Xepc4HhMEeuX8JqR6jXJTg" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//SwitchPosition"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_XennsXhMEeuX8JqR6jXJTg" name="target" incomingLinks="_Xepc4HhMEeuX8JqR6jXJTg" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Switch"/>
+      </storyPatternObjects>
+    </pattern>
+  </ownedNodes>
+  <ownedNodes>
+    <pattern uuid="_XesgMHhMEeuX8JqR6jXJTg" name="switchSet.1.2.1">
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_XesgM3hMEeuX8JqR6jXJTg" source="_XesgMXhMEeuX8JqR6jXJTg" target="_XesgMnhMEeuX8JqR6jXJTg">
+        <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Route/follows"/>
+      </storyPatternLinks>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_XesgMXhMEeuX8JqR6jXJTg" name="source" outgoingLinks="_XesgM3hMEeuX8JqR6jXJTg" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Route"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_XesgMnhMEeuX8JqR6jXJTg" name="target" incomingLinks="_XesgM3hMEeuX8JqR6jXJTg" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//SwitchPosition"/>
+      </storyPatternObjects>
+    </pattern>
+  </ownedNodes>
+  <ownedNodes>
+    <pattern uuid="_XesgNHhMEeuX8JqR6jXJTg" name="switchSet.1.2.2">
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_XesgN3hMEeuX8JqR6jXJTg" source="_XesgNXhMEeuX8JqR6jXJTg" target="_XesgNnhMEeuX8JqR6jXJTg">
+        <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Route/entry"/>
+      </storyPatternLinks>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_XesgNXhMEeuX8JqR6jXJTg" name="source" outgoingLinks="_XesgN3hMEeuX8JqR6jXJTg" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Route"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_XesgNnhMEeuX8JqR6jXJTg" name="target" incomingLinks="_XesgN3hMEeuX8JqR6jXJTg" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Semaphore"/>
+      </storyPatternObjects>
+    </pattern>
+  </ownedNodes>
+  <ownedNodes>
+    <dependencies node="//@ownedNodes.1" indexConstraint="_XewKkHhMEeuX8JqR6jXJTg">
+      <mappings parentVertex="_XesgMXhMEeuX8JqR6jXJTg" childVertex="_XetHQHhMEeuX8JqR6jXJTg"/>
+      <mappings parentVertex="_XesgMnhMEeuX8JqR6jXJTg" childVertex="_XetuUHhMEeuX8JqR6jXJTg" indexPosition="1"/>
+    </dependencies>
+    <dependencies node="//@ownedNodes.2" indexConstraint="_XewKlHhMEeuX8JqR6jXJTg">
+      <mappings parentVertex="_XesgNXhMEeuX8JqR6jXJTg" childVertex="_XetHQHhMEeuX8JqR6jXJTg"/>
+      <mappings parentVertex="_XesgNnhMEeuX8JqR6jXJTg" childVertex="_XewKkXhMEeuX8JqR6jXJTg" indexPosition="1"/>
+    </dependencies>
+    <pattern uuid="_XesgOHhMEeuX8JqR6jXJTg" name="switchSet.1.2">
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_XewKknhMEeuX8JqR6jXJTg" source="_XetHQHhMEeuX8JqR6jXJTg" target="_XetuUHhMEeuX8JqR6jXJTg">
+        <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Route/follows"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_XewKk3hMEeuX8JqR6jXJTg" source="_XetHQHhMEeuX8JqR6jXJTg" target="_XewKkXhMEeuX8JqR6jXJTg">
+        <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Route/entry"/>
+      </storyPatternLinks>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_XetHQHhMEeuX8JqR6jXJTg" name="node0" outgoingLinks="_XewKknhMEeuX8JqR6jXJTg _XewKk3hMEeuX8JqR6jXJTg" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Route"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_XetuUHhMEeuX8JqR6jXJTg" name="node1" incomingLinks="_XewKknhMEeuX8JqR6jXJTg" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//SwitchPosition"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_XewKkXhMEeuX8JqR6jXJTg" name="node2" incomingLinks="_XewKk3hMEeuX8JqR6jXJTg" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Semaphore"/>
+      </storyPatternObjects>
+      <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_XewKkHhMEeuX8JqR6jXJTg" expressionString="left CONTAINS (node0, node1)" expressionLanguageID="ICL"/>
+      <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_XewKlHhMEeuX8JqR6jXJTg" expressionString="right CONTAINS (node0, node2)" expressionLanguageID="ICL"/>
+    </pattern>
+  </ownedNodes>
+  <ownedNodes>
+    <dependencies node="//@ownedNodes.0" indexConstraint="_XewKmHhMEeuX8JqR6jXJTg">
+      <mappings parentVertex="_XennsHhMEeuX8JqR6jXJTg" childVertex="_XewKlnhMEeuX8JqR6jXJTg"/>
+      <mappings parentVertex="_XennsXhMEeuX8JqR6jXJTg" childVertex="_XewKl3hMEeuX8JqR6jXJTg" indexPosition="1"/>
+    </dependencies>
+    <dependencies node="//@ownedNodes.3" indexConstraint="_XewKnnhMEeuX8JqR6jXJTg">
+      <mappings parentVertex="_XetHQHhMEeuX8JqR6jXJTg" childVertex="_XewKmXhMEeuX8JqR6jXJTg" indexPosition="1"/>
+      <mappings parentVertex="_XetuUHhMEeuX8JqR6jXJTg" childVertex="_XewKlnhMEeuX8JqR6jXJTg"/>
+      <mappings parentVertex="_XewKkXhMEeuX8JqR6jXJTg" childVertex="_XewKmnhMEeuX8JqR6jXJTg" indexPosition="2"/>
+    </dependencies>
+    <pattern uuid="_XewKlXhMEeuX8JqR6jXJTg" name="switchSet.1">
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_XewKm3hMEeuX8JqR6jXJTg" source="_XewKlnhMEeuX8JqR6jXJTg" target="_XewKl3hMEeuX8JqR6jXJTg">
+        <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//SwitchPosition/target"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_XewKnHhMEeuX8JqR6jXJTg" source="_XewKmXhMEeuX8JqR6jXJTg" target="_XewKlnhMEeuX8JqR6jXJTg">
+        <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Route/follows"/>
+      </storyPatternLinks>
+      <storyPatternLinks xsi:type="mlstorypatterns:StoryPatternLink" uuid="_XewKnXhMEeuX8JqR6jXJTg" source="_XewKmXhMEeuX8JqR6jXJTg" target="_XewKmnhMEeuX8JqR6jXJTg">
+        <feature xsi:type="ecore:EReference" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Route/entry"/>
+      </storyPatternLinks>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_XewKlnhMEeuX8JqR6jXJTg" name="node0" outgoingLinks="_XewKm3hMEeuX8JqR6jXJTg" incomingLinks="_XewKnHhMEeuX8JqR6jXJTg" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//SwitchPosition"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_XewKl3hMEeuX8JqR6jXJTg" name="node1" incomingLinks="_XewKm3hMEeuX8JqR6jXJTg" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Switch"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_XewKmXhMEeuX8JqR6jXJTg" name="node2" outgoingLinks="_XewKnHhMEeuX8JqR6jXJTg _XewKnXhMEeuX8JqR6jXJTg" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Route"/>
+      </storyPatternObjects>
+      <storyPatternObjects xsi:type="mlstorypatterns:StoryPatternObject" uuid="_XewKmnhMEeuX8JqR6jXJTg" name="node3" incomingLinks="_XewKnXhMEeuX8JqR6jXJTg" bindingType="CAN_BE_BOUND">
+        <type xsi:type="ecore:EClass" href="http://www.semanticweb.org/ontologies/2015/trainbenchmark#//Semaphore"/>
+      </storyPatternObjects>
+      <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_XewKmHhMEeuX8JqR6jXJTg" expressionString="left CONTAINS (node0, node1)" expressionLanguageID="ICL"/>
+      <constraints xsi:type="mlexpressions:MLStringExpression" uuid="_XewKnnhMEeuX8JqR6jXJTg" expressionString="right CONTAINS (node0, node2, node3)" expressionLanguageID="ICL"/>
+    </pattern>
+  </ownedNodes>
+</gdn:GDN>
