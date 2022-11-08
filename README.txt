@@ -23,4 +23,4 @@ Tests
 - note that the execution of the test cases related to the Train Benchmark requires a project from the Train Benchmark framework
 
 Wiki
-- additional measurement results and visualizations of the test queries can be found in the wiki
+- additional measurement results, visualizations of the test queries, and a description of the test cases can be found in the wiki
